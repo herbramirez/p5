@@ -1,4 +1,5 @@
 var canvas;
+var r,g,b;
 
 
 
@@ -17,6 +18,10 @@ function setup() {
 ///////BEGINNING OF SKETCH//////
     
     w = new Walker();
+    
+    var r = random(0,255);
+    var g = random(0,255);
+    var b = random(0,255);
 
 }
 
@@ -25,7 +30,7 @@ function windowResized() {
 }
 
 function draw(){
-    fill(0);
+    fill(r,g,b);
     w.walk();
     w.display();
     
@@ -41,7 +46,7 @@ function Walker(){
     }
 
     this.display = function(){
-        fill(0);
+        fill(r,g,b);
         rect(random(0,width),random(0,height), random(0,100), random(0,150));
     }
     
