@@ -1,8 +1,6 @@
 var canvas;
 var r,g,b;
 
-
-
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
@@ -30,7 +28,7 @@ function windowResized() {
 }
 
 function draw(){
-    fill(r,g,b);
+    fill(r, g, b);
     w.walk();
     w.display();
     
@@ -46,7 +44,7 @@ function Walker(){
     }
 
     this.display = function(){
-        fill(r,g,b);
+        fill(r, g, b);
         rect(random(0,width),random(0,height), random(0,100), random(0,150));
     }
     
