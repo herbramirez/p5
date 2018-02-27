@@ -6,7 +6,7 @@ html {
 body{
     background: #F0F0F1;
     color: #DC304B;
-    font-size: 18px;
+    font-size: 28px;
     margin: 0, auto;
     width: 100%vw;
     height: 100%vh;
@@ -44,7 +44,7 @@ ul{
 
 li{
  list-style-type: none;
-   
+
 }
 
 a:link{
@@ -67,4 +67,20 @@ a:visited {
     color: white;
 }
 
+
+/*beginning of diff media platforms */
+@media only screen and (max-width: 680px) {
+  
+    
+
+ @media screen and (max-width: 600px) {
+
+    }
+@media only screen and (max-width: 680px) {
+     }
+   
+    }
+   
+       
+}
    

@@ -1,3 +1,4 @@
+
 let box;
 
 
@@ -21,7 +22,7 @@ class Box {
     noFill();
     push();
     fill(255,0,0);  
-    rect(this.x, this.y, this.xWid, 100);
+    rect(this.x, this.y, this.xWid* mouseX, 100);
     pop();
     push();
     fill(255,255,0);  
