@@ -37,7 +37,7 @@ class HRTile extends Tile {
         
     
     display() {
-        noStroke();
+      
         
         super.display();
         
@@ -47,9 +47,39 @@ class HRTile extends Tile {
             rect(10, 10, 10, height);
             rect(10, 10, width, 10);
         }
-    
         
-        //AK47
+        //A day with great weaather
+        
+         for (let i = 0; i <= this.weather; i++){
+            push(); 
+            fill(255,255,0);
+            translate(width/2, height/2);
+            ellipse(0,0, 100, 100);
+            pop();
+         }
+        //sunrays
+        
+
+        for (var s = 0; s < 8; s++) {
+		push();
+        translate(width/2, height/2);
+        fill(255,255,0);
+		rotate(TWO_PI * s / 8);
+		translate(120, 0);
+        text('Beautiful day',13, 3);
+		ellipse(0, 0, 20, 20);
+            
+        pop();
+        
+		for (var sr = 0; sr < 12; sr++) {
+			push();
+			rotate(frameCount * sr / 12);
+			ellipse(0, 0, 8, 8);
+			pop();
+		}		
+	}
+
+         //Dont have to use my AK
         
         for (let i = 0; i <= this.activity; i++){
             fill(0);
@@ -75,19 +105,22 @@ class HRTile extends Tile {
          for (let i = 0; i <= this.event; i++){
             fill(255);
             stroke(0);
-            ellipse(x*6,x*10,100,100);
-            noStroke();
-            ellipse(x*6,x*11,100,100);
+            ellipse(x*6,x*14,50,50);
             fill(random(255,255,255));
             fill(255,0,0);
-             rect(x*5,x*8, 10,50);
-             rect(x*6,x*7, 10,40);
-             rect(x*7,x*8, 10,60);
+             rect(x*5,x*13, 5,20);
+             rect(x*6,x*13, 5,20);
+             rect(x*5.5,x*12.7, 5,20);
+               rect(x*6.6,x*12.7, 5,20);
             //candles
-        
+             
         }
-        
+   
     }
+        
+   
+
 }
+
     
 
